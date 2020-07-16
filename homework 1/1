@@ -1,4 +1,4 @@
-a = int(input())
+n = int(input())
 mins = a // 60 
 h = mins // 60
 v = mins % 60
