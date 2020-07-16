@@ -1,0 +1,9 @@
+a = int(input())
+mins = a // 60 
+h = mins // 60
+v = mins % 60
+s = a % 60
+if h >=24:
+    h = h -24
+
+print(h, ":" , v, ":" ,s)
