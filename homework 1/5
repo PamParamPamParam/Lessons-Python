@@ -1,0 +1,11 @@
+h = int(input())
+a = int(input())
+b = int(input())
+if h % (a-b) > 0:
+    d = (h // (a-b) + 1)
+else:
+    d = (h // (a-b))
+if a >=h:
+    print(1)
+else:
+    print(d)
