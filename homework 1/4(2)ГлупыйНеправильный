@@ -1,0 +1,8 @@
+a1 = int(input())
+a2 = int(input())
+a3 = int(input())
+a4 = int(input())
+if a1 == a4 and a2 == a3:
+print(1)
+else:
+print(1337)
