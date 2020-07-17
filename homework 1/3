@@ -1,6 +1,11 @@
 v = int(input())
 t = int(input())
 s = v * t
-if s > 109:
- s = s % 109
-print(s)
+if s > 109 and s >= 0:
+ v = s % 109
+
+if s < 0 and s >= -109:
+ v = 109 + s
+if s <-109:
+ v = s * -1 % 109
+print(v)
