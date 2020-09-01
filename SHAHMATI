@@ -1,0 +1,52 @@
+from tkinter import *
+from random import *
+from time import *
+window = Tk()
+canvas = Canvas(window, width = 500, height = 500, bg = "white",)
+canvas.pack()
+
+for i in range(5):
+    if i % 2  == 1:
+        continue
+        canvas.create_reactangle( [i *100,0] ,[i *100 +100,100],fill = "black")
+
+canvas.create_rectangle(0,0,100,100,fill= "black")
+canvas.create_rectangle(200,0,300,100,fill= "black")
+canvas.create_rectangle(400,0,500,100,fill= "black")
+
+
+for i in range(5):
+    if i % 2 !=1:
+        continue
+        canvas.create_reactangle( [i *100,100] ,[i *100 +100,200],fill = "black")
+
+canvas.create_rectangle(100,100,200,200,fill= "black")
+canvas.create_rectangle(300,100,400,200,fill= "black")
+
+for i in range(5):
+    if i % 2  == 1:
+        continue
+        canvas.create_reactangle( [i *100,200] ,[i *100 +100,300],fill = "black")
+
+canvas.create_rectangle(0,200,100,300,fill= "black")
+canvas.create_rectangle(200,200,300,300,fill= "black")
+canvas.create_rectangle(400,200,500,300,fill= "black")
+
+for i in range(5):
+    if i % 2 !=1:
+        continue
+        canvas.create_reactangle( [i *100,300] ,[i *100 +100,400],fill = "black")
+
+canvas.create_rectangle(100,300,200,400,fill= "black")
+canvas.create_rectangle(300,300,400,400,fill= "black")
+
+for i in range(5):
+    if i % 2  == 1:
+        continue
+        canvas.create_reactangle( [i *100,400] ,[i *100 +100,500],fill = "black")
+
+canvas.create_rectangle(0,400,100,500,fill= "black")
+canvas.create_rectangle(200,400,300,500,fill= "black")
+canvas.create_rectangle(400,400,500,500,fill= "black")
+
+window.mainloop()
