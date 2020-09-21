@@ -1,0 +1,12 @@
+import random
+
+def randomniy(Spisok):
+    for i in range (n):
+        Spisok.append(random.randint(a,b+1))
+
+n = int(input())
+a = int(input())
+b = int(input())
+Spisok = []
+randomniy(Spisok)
+print(Spisok)
