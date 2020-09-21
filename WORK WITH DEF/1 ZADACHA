@@ -1,0 +1,12 @@
+def Kolvo(n,z):
+    kolich = 1
+    while n // z != 0:
+        kolich += 1
+        z = z * 10
+    return kolich
+
+
+n = int(input())
+z = 10
+
+print(Kolvo(n,z))
